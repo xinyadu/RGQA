@@ -1,0 +1,3459 @@
+{
+  "ArtifactExistence.DamageDestroyDisableDismantle.Damage": {
+    "event_id": "LDC_KAIROS_evt_001",
+    "template": "<arg1> damaged <arg2> using <arg3> instrument in <arg4> place",
+    "i-label": 1,
+    "keywords": [
+      "damage",
+      "harm"
+    ],
+    "roles": [
+      "Damager",
+      "Artifact",
+      "Instrument",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "bal",
+        "com",
+        "fac",
+        "loc",
+        "mon",
+        "nat",
+        "pth",
+        "veh",
+        "wea"
+      ],
+      [
+        "com",
+        "veh",
+        "wea"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Damager": "who is the damaging agent?",
+      "Artifact": "what is being damaged?",
+      "Instrument": "what is the instrument used in the damage?",
+      "Place": "where the damage takes place?"
+    }
+  },
+  "ArtifactExistence.DamageDestroyDisableDismantle.Destroy": {
+    "event_id": "LDC_KAIROS_evt_002",
+    "template": "<arg1> destroyed <arg2> using <arg3> instrument in <arg4> place",
+    "i-label": 2,
+    "keywords": [
+      "destroy",
+      "destruct",
+      "sabotage"
+    ],
+    "roles": [
+      "Destroyer",
+      "Artifact",
+      "Instrument",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "bal",
+        "com",
+        "fac",
+        "loc",
+        "mon",
+        "nat",
+        "pth",
+        "veh",
+        "wea"
+      ],
+      [
+        "com",
+        "veh",
+        "wea"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Destroyer": "who is the destroying agent?",
+      "Artifact": "what is being destroyed?",
+      "Instrument": "what is the instrument used in the destroy?",
+      "Place": "where the destroy takes place?"
+    }
+  },
+  "ArtifactExistence.DamageDestroyDisableDismantle.DisableDefuse": {
+    "event_id": "LDC_KAIROS_evt_003",
+    "template": "<arg1> disabled or defused <arg2> using <arg3> instrument in <arg4> place",
+    "i-label": 3,
+    "keywords": [
+      "disable",
+      "defuse",
+      "deactivate"
+    ],
+    "roles": [
+      "Disabler",
+      "Artifact",
+      "Instrument",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "abs",
+        "com",
+        "fac",
+        "veh",
+        "wea"
+      ],
+      [
+        "abs",
+        "com",
+        "veh",
+        "wea"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Disabler": "who is the disable agent?",
+      "Artifact": "what is being desabled?", 
+      "Instrument": "what is the instrument used in the disable?",
+      "Place": "where the disable takes place?"
+    }
+  },
+  "ArtifactExistence.DamageDestroyDisableDismantle.Dismantle": {
+    "event_id": "LDC_KAIROS_evt_004",
+    "template": "<arg1> dismantled <arg2> using <arg3> instrument in <arg4> place",
+    "i-label": 4,
+    "keywords": [
+      "dismantle",
+      "disassemble",
+      "deconstruct"
+    ],
+    "roles": [
+      "Dismantler",
+      "Artifact",
+      "Instrument",
+      "Components",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "com",
+        "fac",
+        "veh",
+        "wea"
+      ],
+      [
+        "com",
+        "veh"
+      ],
+      [
+        "com"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions":{
+      "Dismantler": "who is the dismantle agent?",
+      "Artifact": "what is being dismantled?",
+      "Instrument": "what is the instrument used in the dismantle?",
+      "Components": "who is being dismantled?",
+      "Place": "where the dismantle takes place?"
+    }
+  },
+  "ArtifactExistence.DamageDestroyDisableDismantle.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_005",
+    "template": "<arg1> damaged or destroyed <arg2> using <arg3> instrument in <arg4> place",
+    "i-label": 5,
+    "keywords": [
+      "demolish",
+      "ruin",
+      "devastate",
+      "disrupt",
+      "wreck"
+    ],
+    "roles": [
+      "DamagerDestroyer",
+      "Artifact",
+      "Instrument",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "bal",
+        "com",
+        "fac",
+        "loc",
+        "mon",
+        "nat",
+        "pth",
+        "veh",
+        "wea"
+      ],
+      [
+        "com",
+        "veh",
+        "wea"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "DamagerDestroyer": "who is the damaging agent?",
+      "Artifact": "what is being destroyed",
+      "Instrument": "what is the instrument used in the destroy",
+      "Place": "where the destroy takes place?"
+    }
+  },
+  "ArtifactExistence.ManufactureAssemble.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_006",
+    "template": "<arg1> manufactured or assembled or produced <arg2> from <arg3> components using <arg4> at <arg5> place",
+    "i-label": 6,
+    "keywords": [
+      "build",
+      "assemble",
+      "manufacture"
+    ],
+    "roles": [
+      "ManufacturerAssembler",
+      "Artifact",
+      "Components",
+      "Instrument",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "bal",
+        "com",
+        "fac",
+        "mon",
+        "veh",
+        "wea",
+        "pth"
+      ],
+      [
+        "com",
+        "veh",
+        "wea",
+        "pth"
+      ],
+      [
+        "com",
+        "inf"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "ManufacturerAssembler": "what is the manufacutring agent?",
+      "Artifact": "what is being manufactured?",
+      "Components": "what is the components used for the manufacture?",
+      "Instrument": "what is the instrument used in the manufacture?",
+      "Place": "where the manufacutring takes place?"
+    }
+  },
+  "Cognitive.IdentifyCategorize.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_007",
+    "template": "<arg1> identified <arg2> as <arg3> at <arg4> place",
+    "i-label": 7,
+    "keywords": [
+      "identify",
+      "recognize",
+      "discover"
+    ],
+    "roles": [
+      "Identifier",
+      "IdentifiedObject",
+      "IdentifiedRole",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event",
+        "per",
+        "org",
+        "bal",
+        "com",
+        "fac",
+        "loc",
+        "mon",
+        "veh",
+        "wea",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "event",
+        "per",
+        "org",
+        "bal",
+        "com",
+        "fac",
+        "loc",
+        "mon",
+        "veh",
+        "wea",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Identifier": "who is the identifier?",
+      "IdentifiedObject": "what is being identified?",
+      "IdentifiedRole": "what is being identified as?",
+      "Place": "where the idenfiying takes place?"
+    }
+  },
+  "Cognitive.Inspection.SensoryObserve": {
+    "event_id": "LDC_KAIROS_evt_008",
+    "template": "<arg1> observed <arg2> using <arg3> in <arg4> place",
+    "i-label": 8,
+    "keywords": [
+      "observe",
+      "inspect",
+      "examine"
+    ],
+    "roles": [
+      "Observer",
+      "ObservedEntity",
+      "Instrument",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "com",
+        "veh",
+        "wea",
+        "fac",
+        "bal",
+        "mon",
+        "mhi",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth",
+        "event"
+      ],
+      [
+        "com"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Observer": "who is the observer?",
+      "ObservedEntity": "what is being observed?",
+      "Instrument": "what is the instrument used in the observe?",
+      "Place": "where the observe takes place?"
+    }
+  },
+  "Cognitive.Research.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_009",
+    "template": "<arg1> researched <arg2> subject using <arg3> at <arg4> place",
+    "i-label": 9,
+    "keywords": [
+      "research",
+      "analyze",
+      "probe"
+    ],
+    "roles": [
+      "Researcher",
+      "Subject",
+      "Means",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event",
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "loc",
+        "fac",
+        "veh",
+        "wea",
+        "com",
+        "bal",
+        "mon",
+        "law",
+        "res",
+        "val",
+        "mhi",
+        "inf",
+        "abs",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "event",
+        "abs",
+        "inf",
+        "com"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Researcher": "who is the researcher?",
+      "Subject": "what is being researched?",
+      "Means": "what is being used for the research?",
+      "Place": "where the research takes place?"
+    }
+  },
+  "Cognitive.TeachingTrainingLearning.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_010",
+    "template": "<arg1> taught <arg2> field of knowledge to <arg3> using <arg4> at <arg5> institution in <arg6> place",
+    "i-label": 10,
+    "keywords": [
+      "learn",
+      "teach",
+      "train",
+      "school",
+      "lessons",
+      "classes"
+    ],
+    "roles": [
+      "TeacherTrainer",
+      "FieldOfKnowledge",
+      "Learner",
+      "Means",
+      "Institution",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "aml"
+      ],
+      [
+        "inf"
+      ],
+      [
+        "per",
+        "org",
+        "com",
+        "aml",
+        "abs"
+      ],
+      [
+        "com",
+        "abs",
+        "inf"
+      ],
+      [
+        "org"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "TeacherTrainer": "who is the teaching agent?",
+      "FieldOfKnowledge": "what is being taught?",
+      "Learner": "who is being taught?",
+      "Means": "what is being used for the teaching",
+      "Institution": "where is the teaching at institution",
+      "Place": "where the teaching takes place?"
+    }
+  },
+  "Conflict.Attack.DetonateExplode": {
+    "event_id": "LDC_KAIROS_evt_011",
+    "template": "<arg1> detonated or exploded <arg4> explosive device using <arg3> to attack <arg2> target at <arg5> place",
+    "i-label": 11,
+    "keywords": [
+      "detonate",
+      "explode",
+      "bombing",
+      "detonation"
+    ],
+    "roles": [
+      "Attacker",
+      "Target",
+      "Instrument",
+      "ExplosiveDevice",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac",
+        "per",
+        "com",
+        "veh",
+        "wea",
+        "sid",
+        "aml",
+        "pla",
+        "nat"
+      ],
+      [
+        "wea",
+        "com"
+      ],
+      [
+        "wea",
+        "com"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Attacker": "Who is the denotating agent?",
+      "Target": "who is the target of the attack?",
+      "Instrument": "What is the instrument used in the attack?",
+      "ExplosiveDevice": "what is the explosive device?",
+      "Place": "Where the detonation takes place?" 
+    }
+  },
+  "Conflict.Attack.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_012",
+    "template": "<arg1> attacked <arg2> using <arg3> at <arg4> place",
+    "i-label": 12,
+    "keywords": [
+      "attack",
+      "war",
+      "terrorism",
+      "shot",
+      "fire"
+    ],
+    "roles": [
+      "Attacker",
+      "Target",
+      "Instrument",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "aml"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac",
+        "per",
+        "com",
+        "veh",
+        "wea",
+        "sid",
+        "aml",
+        "pla",
+        "nat"
+      ],
+      [
+        "com",
+        "veh",
+        "wea",
+        "pth"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Attacker": "Who is the attacking agent?",
+      "Target": "Who is the target of the attack?",
+      "Instrument": "What is the instrument used in the attack?",
+      "Place": "Where the attack takes place?"
+    }
+  },
+  "Conflict.Defeat.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_013",
+    "template": "<arg1> defeated <arg2> in <arg3> conflict at <arg4> place",
+    "i-label": 13,
+    "keywords": [
+      "defeat",
+      "defeated",
+      "crush",
+      "victory",
+      "win",
+      "triumph"
+    ],
+    "roles": [
+      "Victor",
+      "Defeated",
+      "ConflictOrElection",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "aml"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "aml"
+      ],
+      [
+        "event"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Victor": "who is the defeat agent?",
+      "Defeated": "who is the target of the defeat?",
+      "ConflictOrElection": "what is the conflict event?",
+      "Place": "Where the defeat takes place?"
+    }
+  },
+  "Conflict.Demonstrate.DemonstrateWithViolence": {
+    "event_id": "LDC_KAIROS_evt_014",
+    "template": "<arg1> was in a demonstration involving violence for <arg4> topic with <arg3> visual display against <arg5> at <arg6> place, with potential involvement of <arg2> police or military",
+    "i-label": 14,
+    "keywords": [
+      "demonstrate",
+      "protest",
+      "strike"
+    ],
+    "roles": [
+      "Demonstrator",
+      "Regulator",
+      "VisualDisplay",
+      "Topic",
+      "Target",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "sid"
+      ],
+      [
+        "per",
+        "org"
+      ],
+      [
+        "com"
+      ],
+      [
+        "event",
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "loc",
+        "fac",
+        "veh",
+        "wea",
+        "com",
+        "bal",
+        "mon",
+        "law",
+        "res",
+        "val",
+        "mhi",
+        "inf",
+        "abs",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "org",
+        "per",
+        "gpe"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Demonstrator": "who is demonstrating agent?",
+      "Regulator": "who is the regulator?",
+      "VisualDisplay": "what is the visual display?",
+      "Topic": "what is the topic for the demonstration?",
+      "Target": "who is the target of the demonstration?",
+      "Place": "where the demonstration takes place?"
+    }
+  },
+  "Conflict.Demonstrate.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_015",
+    "template": "<arg1> was in a demonstration for <arg4> topic with <arg3> visual display against <arg5> at <arg6> place, with potential involvement of <arg2> police or military",
+    "i-label": 15,
+    "keywords": [
+      "demonstrate",
+      "march",
+      "rally"
+    ],
+    "roles": [
+      "Demonstrator",
+      "Regulator",
+      "VisualDisplay",
+      "Topic",
+      "Target",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "sid"
+      ],
+      [
+        "per",
+        "org"
+      ],
+      [
+        "com"
+      ],
+      [
+        "event",
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "loc",
+        "fac",
+        "veh",
+        "wea",
+        "com",
+        "bal",
+        "mon",
+        "law",
+        "res",
+        "val",
+        "mhi",
+        "inf",
+        "abs",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "org",
+        "per",
+        "gpe"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Demonstrator": "who is demonstrating agent?",
+      "Regulator": "who is the regulator?",
+      "VisualDisplay": "what is the visual display?",
+      "Topic": "what is the topic for the demonstration?",
+      "Target": "who is the target of the demonstration?",
+      "Place": "where the demonstration takes place?"
+    }
+  },
+  "Contact.Contact.Broadcast": {
+    "event_id": "LDC_KAIROS_evt_016",
+    "template": "<arg1> communicated to <arg2> about <arg4> topic using <arg3> at <arg5> place (one-way communication)",
+    "i-label": 16,
+    "keywords": [
+      "broadcast",
+      "announce",
+      "state"
+    ],
+    "roles": [
+      "Communicator",
+      "Recipient",
+      "Instrument",
+      "Topic",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "abs",
+        "com"
+      ],
+      [
+        "event",
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "loc",
+        "fac",
+        "veh",
+        "wea",
+        "com",
+        "bal",
+        "mon",
+        "law",
+        "res",
+        "val",
+        "mhi",
+        "inf",
+        "abs",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Communicator": "who is communicating agents?",
+      "Recipient": "who is the recipient?",
+      "Instrument": "What is the instrument used in the communication?",
+      "Topic": "what is the communicating topic?",
+      "Place": "Where it takes place?"
+    }
+  },
+  "Contact.Contact.Correspondence": {
+    "event_id": "LDC_KAIROS_evt_017",
+    "template": "<arg1> communicated remotely with <arg2> about <arg4> topic using <arg3> at <arg5> place",
+    "i-label": 17,
+    "keywords": [
+      "telephone",
+      "mail",
+      "letter",
+      "correspondence",
+      "call"
+    ],
+    "roles": [
+      "Participant",
+      "Participant",
+      "Instrument",
+      "Topic",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "abs",
+        "com"
+      ],
+      [
+        "event",
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "loc",
+        "fac",
+        "veh",
+        "wea",
+        "com",
+        "bal",
+        "mon",
+        "law",
+        "res",
+        "val",
+        "mhi",
+        "inf",
+        "abs",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Participant": "who is communicating agents?",
+      "Participant": "who is communicating agents?",
+      "Instrument": "What is the instrument used in the communication?",
+      "Topic": "what is the communicating topic?",
+      "Place": "Where it takes place?"
+    }
+  },
+  "Contact.Contact.Meet": {
+    "event_id": "LDC_KAIROS_evt_018",
+    "template": "<arg1> met face-to-face with <arg2> about <arg3> topic at <arg4> place",
+    "i-label": 18,
+    "keywords": [
+      "meet",
+      "meeting",
+      "encounter",
+      "summit"
+    ],
+    "roles": [
+      "Participant",
+      "Participant",
+      "Topic",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event",
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "loc",
+        "fac",
+        "veh",
+        "wea",
+        "com",
+        "bal",
+        "mon",
+        "law",
+        "res",
+        "val",
+        "mhi",
+        "inf",
+        "abs",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Participant": "Who are meeting?",
+      "Participant": "Who are meeting?",
+      "Topic": "what is the topic of the meeting",
+      "Place": "Where the meeting takes place?"
+    }
+  },
+  "Contact.Contact.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_019",
+    "template": "<arg1> communicated with <arg2> about <arg3> topic at <arg4> place (document does not specify in person or not, or one-way or not)",
+    "i-label": 19,
+    "keywords": [
+      "contact",
+      "discuss",
+      "talk"
+    ],
+    "roles": [
+      "Participant",
+      "Participant",
+      "Topic",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event",
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "loc",
+        "fac",
+        "veh",
+        "wea",
+        "com",
+        "bal",
+        "mon",
+        "law",
+        "res",
+        "val",
+        "mhi",
+        "inf",
+        "abs",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Participant": "who is communicating agents?",
+      "Participant": "who is communicating agents?",
+      "Topic": "what is the communicating topic?",
+      "Place": "Where it takes place?"
+    }
+  },
+  "Contact.Prevarication.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_023",
+    "template": "<arg1> communicated with <arg2> about <arg3> topic at <arg4> place (document does not specify in person or not, or one-way or not)",
+    "i-label": 20,
+    "keywords": [
+      "dodge",
+      "lie",
+      "prevaricate"
+    ],
+    "roles": [
+      "Communicator",
+      "Recipient",
+      "Topic",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event",
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "loc",
+        "fac",
+        "veh",
+        "wea",
+        "com",
+        "bal",
+        "mon",
+        "law",
+        "res",
+        "val",
+        "mhi",
+        "inf",
+        "abs",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Communicator": "who is communicating agents?",
+      "Recipient": "who is communicating agents?",
+      "Topic": "what is the communicating topic?",
+      "Place": "Where it takes place?"
+    }
+  },
+  "Contact.RequestCommand.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_027",
+    "template": "<arg1> communicated with <arg2> about <arg3> topic at <arg4> place (document does not specify in person or not, or one-way or not)",
+    "i-label": 21,
+    "keywords": [
+      "request",
+      "command",
+      "order"
+    ],
+    "roles": [
+      "Communicator",
+      "Recipient",
+      "Topic",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event",
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "loc",
+        "fac",
+        "veh",
+        "wea",
+        "com",
+        "bal",
+        "mon",
+        "law",
+        "res",
+        "val",
+        "mhi",
+        "inf",
+        "abs",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Communicator": "who is communicating agents?",
+      "Recipient": "who is communicating agents?",
+      "Topic": "what is the communicating topic?",
+      "Place": "Where it takes place?"
+    }
+  },
+  "Contact.ThreatenCoerce.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_031",
+    "template": "<arg1> communicated with <arg2> about <arg3> topic at <arg4> place (document does not specify in person or not, or one-way or not)",
+    "i-label": 22,
+    "keywords": [
+      "threaten",
+      "pressurize",
+      "provoke"
+    ],
+    "roles": [
+      "Communicator",
+      "Recipient",
+      "Topic",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event",
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "loc",
+        "fac",
+        "veh",
+        "wea",
+        "com",
+        "bal",
+        "mon",
+        "law",
+        "res",
+        "val",
+        "mhi",
+        "inf",
+        "abs",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Communicator": "who is communicating agents?",
+      "Recipient": "who is communicating agents?",
+      "Topic": "what is the communicating topic?",
+      "Place": "Where it takes place?"
+    }
+  },
+  "Control.ImpedeInterfereWith.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_032",
+    "template": "<arg1> impeded or interfered with <arg2> event at <arg3> place",
+    "i-label": 23,
+    "keywords": [
+      "impede",
+      "hinder",
+      "interfer",
+      "disrupt"
+    ],
+    "roles": [
+      "Impeder",
+      "ImpededEvent",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Impeder": "who is the impeder agent?",
+      "ImpededEvent": "what is the impede event?",
+      "Place": "where the impede takes place?"
+    }
+  },
+  "Disaster.Crash.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_033",
+    "template": "<arg1> person in <arg2> vehicle crashed into <arg3> at <arg4> place",
+    "i-label": 24,
+    "keywords": [
+      "crash",
+      "collision",
+      "derailment",
+      "collide",
+      "accident"
+    ],
+    "roles": [
+      "DriverPassenger",
+      "Vehicle",
+      "CrashObject",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per"
+      ],
+      [
+        "veh"
+      ],
+      [
+        "aml",
+        "com",
+        "fac",
+        "loc",
+        "per",
+        "veh",
+        "wea"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "DriverPassenger": "Who is responsible for the transport event?",
+      "Vehicle": "What is the vehicle used to transport the person or artifact?",
+      "CrashObject": "what is being crashed into?",
+      "Place": "where the transport takes place?"
+    }
+  },
+  "Disaster.DiseaseOutbreak.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_034",
+    "template": "<arg1> disease broke out among <arg2> victims or population at <arg3> place",
+    "i-label": 25,
+    "keywords": [
+      "epidemic",
+      "outbreak",
+      "transmission"
+    ],
+    "roles": [
+      "Disease",
+      "Victim",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "mhi"
+      ],
+      [
+        "per",
+        "org",
+        "sid",
+        "aml",
+        "pla"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac",
+        "veh"
+      ]
+    ],
+    "questions": {
+      "Disease": "what broke out?",
+      "Victim": "Who is the harmed person?",
+      "Place": "Where the disease takes place?"
+    }
+  },
+  "Disaster.FireExplosion.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_035",
+    "template": "<arg1> caught fire or exploded from <arg2> instrument at <arg3> place",
+    "i-label": 26,
+    "keywords": [
+      "fire",
+      "explode",
+      "blast",
+      "arson",
+      "burn"
+    ],
+    "roles": [
+      "FireExplosionObject",
+      "Instrument",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "bal",
+        "veh",
+        "wea",
+        "fac",
+        "loc",
+        "com",
+        "nat"
+      ],
+      [
+        "com",
+        "veh",
+        "wea",
+        "fac"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "FireExplosionObject": "what caught fire?",
+      "Instrument": "What is the instrument used in the explosion?",
+      "Place": "where the explosion takes place?"
+    }
+  },
+  "GenericCrime.GenericCrime.GenericCrime": {
+    "event_id": "LDC_KAIROS_evt_036",
+    "template": "<arg1> committed a crime against <arg2> at <arg3> place",
+    "i-label": 27,
+    "keywords": [
+      "crime",
+      "felony",
+      "offense",
+      "theft",
+      "murder",
+      "robbery"
+    ],
+    "roles": [
+      "Perpetrator",
+      "Victim",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "aml"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Perpetrator": "who committed a crime?",
+      "Victim": "Who is the target of the crime?",
+      "Place": "Where the crime takes place?"
+    }
+  },
+  "Justice.Acquit.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_037",
+    "template": "<arg1> court or judge acquitted <arg2> of <arg3> crime in <arg4> place",
+    "i-label": 28,
+    "keywords": [
+      "acquit",
+      "absolve"
+    ],
+    "roles": [
+      "JudgeCourt",
+      "Defendant",
+      "Crime",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "side"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "JudgeCourt": "What is the judge?",
+      "Defendant": "Who is the defendant?",
+      "Crime": "what is the crime being acquitted?",
+      "Place": "Where the acquit takes place?"
+    }
+  },
+  "Justice.ArrestJailDetain.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_038",
+    "template": "<arg1> arrested or jailed <arg2> for <arg3> crime at <arg4> place",
+    "i-label": 29,
+    "keywords": [
+      "arrest",
+      "jail",
+      "imprison"
+    ],
+    "roles": [
+      "Jailer",
+      "Detainee",
+      "Crime",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "side"
+      ],
+      [
+        "per"
+      ],
+      [
+        "event"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Jailer": "Who is the arresting agent?",
+      "Detainee": "Who is jailed or arrested?",
+      "Crime": "what is the crime being arrested?",
+      "Place": "Where the person is arrested?"
+    }
+  },
+  "Justice.ChargeIndict.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_039",
+    "template": "<arg1> charged or indicted <arg2> before <arg3> court or judge for <arg4> crime in <arg5> place",
+    "i-label": 30,
+    "keywords": [
+      "charge",
+      "indict",
+      "accuse",
+      "accusation"
+    ],
+    "roles": [
+      "Prosecutor",
+      "Defendant",
+      "JudgeCourt",
+      "Crime",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Prosecutor": "Indicated by whom?",
+      "Defendant": "Who is indicted?",
+      "JudgeCourt": "Who was the judge or court?",
+      "Crime": "what is the crime being charged?",
+      "Place": "Where the indictment takes place?"
+    }
+  },
+  "Justice.Convict.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_040",
+    "template": "<arg1> court or judge convicted <arg2> of <arg3> crime in <arg4> place",
+    "i-label": 31,
+    "keywords": [
+      "convict"
+    ],
+    "roles": [
+      "JudgeCourt",
+      "Defendant",
+      "Crime",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "JudgeCourt": "Who is the judge or court?",
+      "Defendant": "Who is convicted?",
+      "Crime":  "what is the crime being convicted?",
+      "Place": "Where the conviction takes place?"
+    }
+  },
+  "Justice.InvestigateCrime.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_041",
+    "template": "<arg1> investigated <arg2> for <arg3> crime in <arg4> place",
+    "i-label": 32,
+    "keywords": [
+      "investigate",
+      "investigation",
+      "search",
+      "suspect",
+      "inquiry"
+    ],
+    "roles": [
+      "Investigator",
+      "Defendant",
+      "Crime",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Investigator": "Who is the investigator?",
+      "Defendant": "Who is investigated?",
+      "Crime":  "what is the crime being investigated?",
+      "Place": "Where the investigation takes place?"
+    }
+  },
+  "Justice.ReleaseParole.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_042",
+    "template": "<arg1> court or judge released or paroled <arg2> from <arg3> crime in <arg4> place",
+    "i-label": 33,
+    "keywords": [
+      "release",
+      "parole",
+      "free"
+    ],
+    "roles": [
+      "JudgeCourt",
+      "Defendant",
+      "Crime",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "JudgeCourt":  "Who will release?",
+      "Defendant": "Who is released?",
+      "Crime": "what is the crime being released?",
+      "Place": "Where the release takes place?"
+    }
+  },
+  "Justice.Sentence.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_043",
+    "template": "<arg1> court or judge sentenced <arg2> for <arg3> crime to <arg4> sentence in <arg5> place",
+    "i-label": 34,
+    "keywords": [
+      "sentence"
+    ],
+    "roles": [
+      "JudgeCourt",
+      "Defendant",
+      "Crime",
+      "Sentence",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event"
+      ],
+      [
+        "sen"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "JudgeCourt": "Who is the judge or court?",
+      "Defendant": "Who is sentenced?",
+      "Crime": "what is the crime being sentenced?",
+      "Sentence": "what is the sentence?",
+      "Place": "Where the sentencing takes place?"
+    }
+  },
+  "Justice.TrialHearing.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_044",
+    "template": "<arg1> tried <arg2> before <arg3> court or judge for <arg4> crime in <arg5> place",
+    "i-label": 35,
+    "keywords": [
+      "trial",
+      "tried",
+      "hearing",
+      "testify"
+    ],
+    "roles": [
+      "Prosecutor",
+      "Defendant",
+      "JudgeCourt",
+      "Crime",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Prosecutor": "Who is the prosecuting agent?",
+      "Defendant": "Who is on trial?",
+      "JudgeCourt": "Who is the judge or court?",
+      "Crime": "what is the crime being tried?",
+      "Place": "Where the trial takes place?"
+    }
+  },
+  "Life.Consume.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_045",
+    "template": "<arg1> consumed <arg2> at <arg3> place",
+    "i-label": 36,
+    "keywords": [
+      "consume",
+      "eat",
+      "drink",
+      "ingest"
+    ],
+    "roles": [
+      "ConsumingEntity",
+      "ConsumedThing",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "aml"
+      ],
+      [
+        "com"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "ConsumingEntity": "what is the consuming agent?",
+      "ConsumedThing": "what is consumed?",
+      "Place": "where the consuming takes place?" 
+    }
+  },
+  "Life.Die.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_046",
+    "template": "<arg1> died at <arg2> place from <arg4> medical issue, killed by <arg3> killer",
+    "i-label": 37,
+    "keywords": [
+      "die",
+      "kill",
+      "death",
+      "assasinate",
+      "suicide"
+    ],
+    "roles": [
+      "Victim",
+      "Place",
+      "Killer",
+      "MedicalIssue"
+    ],
+    "role_types": [
+      [
+        "per",
+        "aml"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "aml"
+      ],
+      [
+        "mhi"
+      ]
+    ],
+    "questions": {
+      "Victim": "Who died?",
+      "Place": "Where the death takes place?",
+      "Killer": "Who is the attacking agent?",
+      "MedicalIssue": "what is the medical issue"
+    }
+  },
+  "Life.Illness.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_047",
+    "template": "<arg1> has <arg3> sickness or illness at <arg4> place, deliberately infected by <arg2>",
+    "i-label": 38,
+    "keywords": [
+      "illness",
+      "disease",
+      "sickness"
+    ],
+    "roles": [
+      "Victim",
+      "DeliberateInjurer",
+      "Disease",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "aml"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "mhi"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Victim": "who is victim?",
+      "DeliberateInjurer": "who is the deliberate injurer",
+      "Disease": "what is the disease or sickness?",
+      "Place": "where the event takes place?"
+    }
+  },
+  "Life.Infect.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_048",
+    "template": "<arg1> was infected with <arg2> from <arg3> at <arg4> place",
+    "i-label": 39,
+    "keywords": [
+      "infect",
+      "spread",
+      "contaminate"
+    ],
+    "roles": [
+      "Victim",
+      "InfectingAgent",
+      "Source",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "aml"
+      ],
+      [
+        "pth"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "loc",
+        "fac",
+        "veh",
+        "wea",
+        "com",
+        "bal",
+        "mon",
+        "mhi",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Victim": "who is victim?",
+      "InfectingAgent": "who infected?",
+      "Source": "what is the infect from?",
+      "Place": "where the event takes place?"
+    }
+  },
+  "Life.Injure.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_049",
+    "template": "<arg1> was injured by <arg2> using <arg3> in <arg4> body part with <arg5> medical issue at <arg6> place",
+    "i-label": 40,
+    "keywords": [
+      "injure",
+      "hurt",
+      "wound"
+    ],
+    "roles": [
+      "Victim",
+      "Injurer",
+      "Instrument",
+      "BodyPart",
+      "MedicalCondition",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "aml"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "aml"
+      ],
+      [
+        "bal",
+        "com",
+        "veh",
+        "wea",
+        "fac",
+        "mon"
+      ],
+      [
+        "bod"
+      ],
+      [
+        "mhi"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Victim": "Who is the harmed person?",
+      "Injurer": "Who is the attacking agent?",
+      "Instrument": "What is the device used to inflict the harm?",
+      "BodyPart": "what is the body part being harmed?",
+      "MedicalCondition": "what is the medical issue?",
+      "Place": "Where the injuring takes place?"
+    }
+  },
+  "Medical.Diagnosis.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_050",
+    "template": "<arg1> treater diagnosed <arg2> patient with <arg3> symptom for <arg4> medical issue at <arg5> place",
+    "i-label": 41,
+    "keywords": [
+      "diagnosis",
+      "identification"
+    ],
+    "roles": [
+      "Treater",
+      "Patient",
+      "SymptomSign",
+      "MedicalCondition",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "aml"
+      ],
+      [
+        "mhi"
+      ],
+      [
+        "mhi"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Treater": "who diagnosed the patient?",
+      "Patient": "who is diagnosed?",
+      "SymptomSign": "what is the symptom?",
+      "MedicalCondition": "what is the medical condition?",
+      "Place": "where the event takes place?"
+    }
+  },
+  "Medical.Intervention.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_051",
+    "template": "<arg1> treater treated <arg2> patient for <arg3> medical issue with <arg4> means at <arg5> place",
+    "i-label": 42,
+    "keywords": [
+      "treat",
+      "surgery",
+      "hospitalize",
+      "medicate",
+      "medicine",
+      "rehabilitation"
+    ],
+    "roles": [
+      "Treater",
+      "Patient",
+      "MedicalIssue",
+      "Instrument",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "aml"
+      ],
+      [
+        "mhi"
+      ],
+      [
+        "com"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Treater": "what treated the patient?",
+      "Patient": "who is treated?",
+      "MedicalIssue": "what is the medical issue?",
+      "Instrument": "What is the instrument used in the treatment?",
+      "Place": "Where the treatment takes place?"
+    }
+  },
+  "Medical.Vaccinate.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_052",
+    "template": "<arg1> treater vaccinated <arg2> patient via <arg4> vaccination method for <arg3> medical issue at <arg5> place",
+    "i-label": 43,
+    "keywords": [
+      "vaccinate"
+    ],
+    "roles": [
+      "Treater",
+      "Patient",
+      "VaccineTarget",
+      "VaccineMethod",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "aml"
+      ],
+      [
+        "mhi"
+      ],
+      [
+        "com"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Treater": "what treated the patient?",
+      "Patient": "who is treated?",
+      "VaccineTarget": "who is the target of the vaccination?",
+      "VaccineMethod": "what is the method of the vaccination?",
+      "Place": "Where the vaccination takes place?"
+    }
+  },
+  "Movement.Transportation.Evacuation": {
+    "event_id": "LDC_KAIROS_evt_053",
+    "template": "<arg1> transported <arg2> in <arg3> from <arg4> place to <arg5> place",
+    "i-label": 44,
+    "keywords": [
+      "evacuate",
+      "evacuation",
+      "retreat",
+      "escape"
+    ],
+    "roles": [
+      "Transporter",
+      "PassengerArtifact",
+      "Vehicle",
+      "Origin",
+      "Destination"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "aml"
+      ],
+      [
+        "veh"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Transporter": "Who is responsible for the transport event?",
+      "PassengerArtifact": "Who is being transported?",
+      "Vehicle": "What is the vehicle used to transport the person or artifact?",
+      "Origin": "Where the transporting originated?",
+      "Destination": "Where the transporting is directed?"
+    }
+  },
+  "Movement.Transportation.IllegalTransportation": {
+    "event_id": "LDC_KAIROS_evt_055",
+    "template": "<arg1> illegally transported <arg2> in <arg3> from <arg4> place to <arg5> place",
+    "i-label": 45,
+    "keywords": [
+      "smuggle",
+      "trespass",
+      "intrude"
+    ],
+    "roles": [
+      "Transporter",
+      "PassengerArtifact",
+      "Vehicle",
+      "Origin",
+      "Destination"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "bal",
+        "com",
+        "fac",
+        "loc",
+        "mon",
+        "veh",
+        "wea",
+        "aml",
+        "pth",
+        "pla",
+        "bod",
+        "nat"
+      ],
+      [
+        "veh"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Transporter": "Who is responsible for the transport event?",
+      "PassengerArtifact": "Who is being transported?",
+      "Vehicle": "What is the vehicle used to transport the person or artifact?",
+      "Origin": "Where the transporting originated?",
+      "Destination": "Where the transporting is directed?"
+    }
+  },
+  "Movement.Transportation.PreventPassage": {
+    "event_id": "LDC_KAIROS_evt_056",
+    "template": "<arg4> prevents <arg1> from entering <arg6> place from <arg5> place to transport <arg2> using <arg3> vehicle",
+    "i-label": 46,
+    "keywords": [
+      "block",
+      "stop",
+      "obstruct"
+    ],
+    "roles": [
+      "Transporter",
+      "PassengerArtifact",
+      "Vehicle",
+      "Preventer",
+      "Origin",
+      "Destination"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "sid",
+        "gpe"
+      ],
+      [
+        "per",
+        "bal",
+        "com",
+        "fac",
+        "loc",
+        "mon",
+        "veh",
+        "wea",
+        "aml",
+        "pth",
+        "pla",
+        "bod",
+        "nat"
+      ],
+      [
+        "veh"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Transporter": "Who is responsible for the transport event?",
+      "PassengerArtifact": "Who is being transported?",
+      "Vehicle": "What is the vehicle used to transport the person or artifact?",
+      "Preventer": "who is preventing the transport?",
+      "Origin": "Where the transporting originated?",
+      "Destination": "Where the transporting is directed?"
+    }
+  },
+  "Movement.Transportation.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_057",
+    "template": "<arg1> transported <arg2> in <arg3> from <arg4> place to <arg5> place",
+    "i-label": 47,
+    "keywords": [
+      "transport",
+      "move",
+      "travel",
+      "head"
+    ],
+    "roles": [
+      "Transporter",
+      "PassengerArtifact",
+      "Vehicle",
+      "Origin",
+      "Destination"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "bal",
+        "com",
+        "fac",
+        "loc",
+        "mon",
+        "veh",
+        "wea",
+        "aml",
+        "pth",
+        "pla",
+        "bod",
+        "nat"
+      ],
+      [
+        "veh"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Transporter": "Who is responsible for the transport event?",
+      "PassengerArtifact": "Who is being transported?",
+      "Vehicle": "What is the vehicle used to transport the person or artifact?",
+      "Origin": "Where the transporting originated?",
+      "Destination": "Where the transporting is directed?"
+    }
+  },
+  "Personnel.EndPosition.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_063",
+    "template": "<arg1> stopped working in <arg3> position at <arg2> organization in <arg4> place",
+    "i-label": 48,
+    "keywords": [
+      "resign",
+      "retire",
+      "former",
+      "fire",
+      "dismiss"
+    ],
+    "roles": [
+      "Employee",
+      "PlaceOfEmployment",
+      "Position",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per"
+      ],
+      [
+        "gpe",
+        "org"
+      ],
+      [
+        "ttl"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Employee": "Who is the employee?",
+      "PlaceOfEmployment": "Who is the employer?",
+      "Position": "what is the position?",
+      "Place": "Where the employment relationship ends?"
+    }
+  },
+  "Personnel.StartPosition.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_064",
+    "template": "<arg1> started working in <arg3> position at <arg2> organization in <arg4> place",
+    "i-label": 49,
+    "keywords": [
+      "hire",
+      "employ",
+      "appoint"
+    ],
+    "roles": [
+      "Employee",
+      "PlaceOfEmployment",
+      "Position",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per"
+      ],
+      [
+        "gpe",
+        "org"
+      ],
+      [
+        "ttl"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Employee": "Who is the employee?",
+      "PlaceOfEmployment": "Who is the employer?",
+      "Position": "what is the position?",
+      "Place": "Where the employment relationship begins?"
+    }
+  },
+  "Transaction.Donation.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_066",
+    "template": "<arg1> gave <arg4> to <arg2> for the benefit of <arg3> at <arg5> place",
+    "i-label": 50,
+    "keywords": [
+      "donate",
+      "aid",
+      "donation",
+      "charity",
+      "relief"
+    ],
+    "roles": [
+      "Giver",
+      "Recipient",
+      "Beneficiary",
+      "ArtifactMoney",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "mon",
+        "com",
+        "bal",
+        "fac",
+        "veh",
+        "wea",
+        "aml",
+        "pla",
+        "nat",
+        "abs",
+        "bod"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Giver": "Who is the donating agent?",
+      "Recipient": "Who is the recipient?",
+      "Beneficiary": "Who benefits from the transfer?",
+      "ArtifactMoney": "what is being donated?",
+      "Place": "Where the transaction takes place?"
+    }
+  },
+  "Transaction.ExchangeBuySell.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_067",
+    "template": "<arg1> bought, sold, or traded <arg3> to <arg2> in exchange for <arg4> for the benefit of <arg5> at <arg6> place",
+    "i-label": 51,
+    "keywords": [
+      "buy",
+      "sell",
+      "purchase",
+      "rent",
+      "trade"
+    ],
+    "roles": [
+      "Giver",
+      "Recipient",
+      "AcquiredEntity",
+      "PaymentBarter",
+      "Beneficiary",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "bal",
+        "com",
+        "gpe",
+        "fac",
+        "loc",
+        "mon",
+        "org",
+        "veh",
+        "wea",
+        "abs",
+        "aml",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "bal",
+        "com",
+        "gpe",
+        "fac",
+        "loc",
+        "mon",
+        "org",
+        "veh",
+        "wea",
+        "abs",
+        "aml",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ],
+    "questions": {
+      "Giver": "Who is the selling agent?", 
+      "Recipient": "Who is the buying agent?",
+      "AcquiredEntity": "Who was bought or sold?",
+      "PaymentBarter": "how much was the selling?",
+      "Beneficiary": "Who benefits from the transaction?",
+      "Place": "Where the sale takes place?"
+    }
+  },
+
+
+
+
+  "Movement:Transport": {
+    "event_id": "evt001",
+    "template": "<arg1> transported <arg2> in <arg3> vehicle from <arg4> place to <arg5> place",
+    "roles": [
+      "Agent",
+      "Artifact",
+      "Vehicle",
+      "Origin",
+      "Destination"
+    ],
+    "i-label": 1,
+    "keywords": [
+      "transport",
+      "move",
+      "travel",
+      "head"
+    ],
+    "questions": {
+      "Agent": "Who is responsible for the transport event?",
+      "Artifact": "Who is being transported?",
+      "Destination": "Where the transporting is directed?",
+      "Origin": "Where the transporting originated?",
+      "Vehicle": "What is the vehicle used to transport the person or artifact?"
+    }
+  },
+  "Personnel:Elect": {
+    "event_id": "evt002",
+    "template": "<arg1> elected <arg2> in <arg3> place",
+    "roles": [
+      "Entity",
+      "Person",
+      "Place"
+    ],
+    "i-label": 2,
+    "keywords": [
+      "elect",
+      "vote",
+      "election"
+    ],
+    "questions": {
+      "Entity": "Who voted?",
+      "Person": "Who was elected?",
+      "Place": "Where the election takes place?"
+    }
+  },
+  "Personnel:Start-Position": {
+    "event_id": "evt003",
+    "template": "<arg1> started working at <arg2> organization in <arg3> place",
+    "roles": [
+      "Person",
+      "Entity",
+      "Place"
+    ],
+    "i-label": 3,
+    "keywords": [
+      "hire",
+      "employ",
+      "appoint"
+    ],
+    "questions": {
+      "Entity": "Who is the employer?",
+      "Person": "Who is the employee?",
+      "Place": "Where the employment relationship begins?"
+    }
+  },
+  "Personnel:Nominate": {
+    "event_id": "evt004",
+    "template": "<arg1> nominated <arg2>",
+    "roles": [
+      "Agent",
+      "Person"
+    ],
+    "i-label": 4,
+    "keywords": [
+      "nominate",
+      "name"
+    ],
+    "questions": {
+      "Agent": "Who is the nominating agent?",
+      "Person": "Who are nominated?"
+    }
+  },
+  "Personnel:End-Position": {
+    "event_id": "evt005",
+    "template": "<arg1> stopped working at <arg2> organization in <arg3> place",
+    "roles": [
+      "Person",
+      "Entity",
+      "Place"
+    ],
+    "i-label": 5,
+    "keywords": [
+      "resign",
+      "retire",
+      "former",
+      "fire",
+      "dismiss"
+    ],
+    "questions": {
+      "Entity": "Who is the employer?",
+      "Person": "Who is the employee?",
+      "Place": "Where the employment relationship ends?"
+    }
+  },
+  "Conflict:Attack": {
+    "event_id": "evt006",
+    "template": "<arg1> attacked <arg2> hurting <arg5> victims using <arg3> instrument at <arg4> place",
+    "roles": [
+      "Attacker",
+      "Target",
+      "Instrument",
+      "Place",
+      "Victim"
+    ],
+    "i-label": 6,
+    "keywords": [
+      "attack",
+      "invade",
+      "shoot",
+      "explode",
+      "war",
+      "terrorism"
+    ],
+    "questions": {
+      "Attacker": "Who is the attacking agent?",
+      "Instrument": "What is the instrument used in the attack?",
+      "Place": "Where the attack takes place?",
+      "Target": "Who is the target of the attack?",
+      "Victim": "Who is the target of the attack?"
+    }
+  },
+  "Contact:Meet": {
+    "event_id": "evt007",
+    "template": "<arg1> met with <arg2> in <arg3> place",
+    "roles": [
+      "Entity",
+      "Entity",
+      "Place"
+    ],
+    "i-label": 7,
+    "keywords": [
+      "meet",
+      "meeting",
+      "talk",
+      "summit"
+    ],
+    "questions": {
+      "Entity": "Who are meeting?",
+      "Place": "Where the meeting takes place?"
+    }
+  },
+  "Life:Marry": {
+    "event_id": "evt008",
+    "template": "<arg1> married <arg2> in <arg3> place",
+    "roles": [
+      "Person",
+      "Person",
+      "Place"
+    ],
+    "i-label": 8,
+    "keywords": [
+      "marry",
+      "wed",
+      "spouse"
+    ],
+    "questions": {
+      "Person": "Who are married?",
+      "Place": "Where the marriage takes place?"
+    }
+  },
+  "Transaction:Transfer-Money": {
+    "event_id": "evt009",
+    "template": "<arg1> gave money to <arg2> for the benefit of <arg3> in <arg4> place",
+    "roles": [
+      "Giver",
+      "Recipient",
+      "Beneficiary",
+      "Place"
+    ],
+    "i-label": 9,
+    "keywords": [
+      "pay",
+      "transfer",
+      "donate",
+      "lend",
+      "borrow",
+      "compensate"
+    ],
+    "questions": {
+      "Beneficiary": "Who benefits from the transfer?",
+      "Giver": "Who is the donating agent?",
+      "Place": "Where the transaction takes place?",
+      "Recipient": "Who is the recipient?"
+    }
+  },
+  "Conflict:Demonstrate": {
+    "event_id": "evt010",
+    "template": "<arg1> demonstrated at <arg2> place",
+    "roles": [
+      "Entity",
+      "Place"
+    ],
+    "i-label": 10,
+    "keywords": [
+      "demonstrate",
+      "protest",
+      "rally",
+      "riot"
+    ],
+    "questions": {
+      "Entity": "Who is demonstrating agent?",
+      "Place": "Where the demonstration takes place?"
+    }
+  },
+  "Business:End-Org": {
+    "event_id": "evt011",
+    "template": "<arg1> organization shut down at <arg2> place",
+    "roles": [
+      "Org",
+      "Place"
+    ],
+    "i-label": 11,
+    "keywords": [
+      "shut",
+      "fold",
+      "collapse",
+      "demise",
+      "failure"
+    ],
+    "questions": {
+      "Org": "What is ended?",
+      "Place": "Where the event takes place?"
+    }
+  },
+  "Justice:Sue": {
+    "event_id": "evt012",
+    "template": "<arg1> sued <arg2> before <arg3> court or judge in <arg4> place",
+    "roles": [
+      "Plaintiff",
+      "Defendant",
+      "Adjudicator",
+      "Place"
+    ],
+    "i-label": 12,
+    "keywords": [
+      "sue",
+      "lawsuit"
+    ],
+    "questions": {
+      "Adjudicator": "Who is the judge or court?",
+      "Defendant": "Who is sued against?",
+      "Place": "Where the suit takes place?",
+      "Plaintiff": "Who is the suing agent?"
+    }
+  },
+  "Life:Injure": {
+    "event_id": "evt013",
+    "template": "<arg1> injured <arg2> with <arg3> instrument in <arg4> place",
+    "roles": [
+      "Agent",
+      "Victim",
+      "Instrument",
+      "Place"
+    ],
+    "i-label": 13,
+    "keywords": [
+      "injure",
+      "hurt",
+      "wound"
+    ],
+    "questions": {
+      "Agent": "Who is the attacking agent?",
+      "Instrument": "What is the device used to inflict the harm?",
+      "Place": "Where the injuring takes place?",
+      "Victim": "Who is the harmed person?"
+    }
+  },
+  "Life:Die": {
+    "event_id": "evt014",
+    "template": "<arg1> killed <arg2> with <arg3> instrument in <arg4> place",
+    "roles": [
+      "Agent",
+      "Victim",
+      "Instrument",
+      "Place"
+    ],
+    "i-label": 14,
+    "keywords": [
+      "die",
+      "kill",
+      "death",
+      "assasinate",
+      "suicide"
+    ],
+    "questions": {
+      "Agent": "Who is the attacking agent?",
+      "Instrument": "What is the device used to kill?",
+      "Place": "Where the death takes place?",
+      "Victim": "Who died?"
+    }
+  },
+  "Justice:Arrest-Jail": {
+    "event_id": "evt015",
+    "template": "<arg1> arrested <arg2> in <arg3> place",
+    "roles": [
+      "Agent",
+      "Person",
+      "Place"
+    ],
+    "i-label": 15,
+    "keywords": [
+      "arrest",
+      "jail",
+      "imprison"
+    ],
+    "questions": {
+      "Agent": "Who is the arresting agent?",
+      "Person": "Who is jailed or arrested?",
+      "Place": "Where the person is arrested?"
+    }
+  },
+  "Contact:Phone-Write": {
+    "event_id": "evt016",
+    "template": "<arg1> communicated remotely with <arg2> at <arg3> place",
+    "roles": [
+      "Entity",
+      "Entity",
+      "Place"
+    ],
+    "i-label": 16,
+    "keywords": [
+      "call",
+      "mail",
+      "letter",
+      "telephone",
+      "correspondence"
+    ],
+    "questions": {
+      "Entity": "Who is communicating agents?",
+      "Place": "Where it takes place?"
+    }
+  },
+  "Transaction:Transfer-Ownership": {
+    "event_id": "evt017",
+    "template": "<arg1> gave <arg4> to <arg2> for the benefit of <arg3> at <arg5> place",
+    "roles": [
+      "Seller",
+      "Buyer",
+      "Beneficiary",
+      "Artifact",
+      "Place"
+    ],
+    "i-label": 17,
+    "keywords": [
+      "purchase",
+      "buy",
+      "acquire"
+    ],
+    "questions": {
+      "Artifact": "Who was bought or sold?",
+      "Beneficiary": "Who benefits from the transaction?",
+      "Buyer": "Who is the buying agent?",
+      "Place": "Where the sale takes place?",
+      "Seller": "Who is the selling agent?"
+    }
+  },
+  "Business:Start-Org": {
+    "event_id": "evt018",
+    "template": "<arg1> started <arg2> organization at <arg3> place",
+    "roles": [
+      "Agent",
+      "Org",
+      "Place"
+    ],
+    "i-label": 18,
+    "keywords": [
+      "establish",
+      "launch",
+      "initiate"
+    ],
+    "questions": {
+      "Agent": "Who is the founder?",
+      "Org": "What is started?",
+      "Place": "Where the event takes place?"
+    }
+  },
+  "Justice:Execute": {
+    "event_id": "evt019",
+    "template": "<arg1> executed <arg2> at <arg3> place",
+    "roles": [
+      "Agent",
+      "Person",
+      "Place"
+    ],
+    "i-label": 19,
+    "keywords": [
+      "execute",
+      "execution"
+    ],
+    "questions": {
+      "Agent": "Who carry out the execution?",
+      "Person": "Who was executed?",
+      "Place": "Where the execution takes place?"
+    }
+  },
+  "Justice:Trial-Hearing": {
+    "event_id": "evt020",
+    "template": "<arg1> tried <arg2> before <arg3> court or judge in <arg4> place",
+    "roles": [
+      "Prosecutor",
+      "Defendant",
+      "Adjudicator",
+      "Place"
+    ],
+    "i-label": 20,
+    "keywords": [
+      "trial",
+      "tried",
+      "hearing",
+      "testify"
+    ],
+    "questions": {
+      "Adjudicator": "Who is the judge or court?",
+      "Defendant": "Who is on trial?",
+      "Place": "Where the trial takes place?",
+      "Prosecutor": "Who is the prosecuting agent?"
+    }
+  },
+  "Life:Be-Born": {
+    "event_id": "evt021",
+    "template": "<arg1> was born in <arg2> place",
+    "roles": [
+      "Person",
+      "Place"
+    ],
+    "i-label": 21,
+    "keywords": [
+      "born",
+      "birth"
+    ],
+    "questions": {
+      "Person": "Who is born?",
+      "Place": "Where the birth takes place?"
+    }
+  },
+  "Justice:Charge-Indict": {
+    "event_id": "evt022",
+    "template": "<arg1> charged or indicted <arg2> before <arg3> court or judge in <arg4> place",
+    "roles": [
+      "Prosecutor",
+      "Defendant",
+      "Adjudicator",
+      "Place"
+    ],
+    "i-label": 22,
+    "keywords": [
+      "charge",
+      "indict",
+      "accuse",
+      "accusation"
+    ],
+    "questions": {
+      "Adjudicator": "Who was the judge or court?",
+      "Defendant": "Who is indicted?",
+      "Place": "Where the indictment takes place?",
+      "Prosecutor": "Indicated by whom?"
+    }
+  },
+  "Justice:Convict": {
+    "event_id": "evt023",
+    "template": "<arg1> court or judge convicted <arg2> in <arg3> place",
+    "roles": [
+      "Adjudicator",
+      "Defendant",
+      "Place"
+    ],
+    "i-label": 23,
+    "keywords": [
+      "convict"
+    ],
+    "questions": {
+      "Adjudicator": "Who is the judge or court?",
+      "Defendant": "Who is convicted?",
+      "Place": "Where the conviction takes place?"
+    }
+  },
+  "Justice:Sentence": {
+    "event_id": "evt024",
+    "template": "<arg1> court or judge sentenced <arg2> in <arg3> place",
+    "roles": [
+      "Adjudicator",
+      "Defendant",
+      "Place"
+    ],
+    "i-label": 24,
+    "keywords": [
+      "sentence"
+    ],
+    "questions": {
+      "Adjudicator": "Who is the judge or court?",
+      "Defendant": "Who is sentenced?",
+      "Place": "Where the sentencing takes place?"
+    }
+  },
+  "Business:Declare-Bankruptcy": {
+    "event_id": "evt025",
+    "template": "<arg1> declared bankruptcy at <arg2> place",
+    "roles": [
+      "Org",
+      "Place"
+    ],
+    "i-label": 25,
+    "keywords": [
+      "bankrupt",
+      "bankruptcy",
+      "broke"
+    ],
+    "questions": {
+      "Org": "What declare bankruptcy?",
+      "Place": "Where the merger takes place?"
+    }
+  },
+  "Justice:Release-Parole": {
+    "event_id": "evt026",
+    "template": "<arg1> released or paroled <arg2> in <arg3> place",
+    "roles": [
+      "Entity",
+      "Person",
+      "Place"
+    ],
+    "i-label": 26,
+    "keywords": [
+      "release",
+      "parole",
+      "free"
+    ],
+    "questions": {
+      "Entity": "Who will release?",
+      "Person": "Who is released?",
+      "Place": "Where the release takes place?"
+    }
+  },
+  "Justice:Fine": {
+    "event_id": "evt027",
+    "template": "<arg1> court or judge fined <arg2> at <arg3> place",
+    "roles": [
+      "Adjudicator",
+      "Entity",
+      "Place"
+    ],
+    "i-label": 27,
+    "keywords": [
+      "fine",
+      "forfeit",
+      "penalize",
+      "fee",
+      "penalty"
+    ],
+    "questions": {
+      "Adjudicator": "Who do the fining?",
+      "Entity": "What was fined?",
+      "Place": "Where the fining Event takes place?"
+    }
+  },
+  "Justice:Pardon": {
+    "event_id": "evt028",
+    "template": "<arg1> court or judge pardoned <arg2> at <arg3> place",
+    "roles": [
+      "Adjudicator",
+      "Defendant",
+      "Place"
+    ],
+    "i-label": 28,
+    "keywords": [
+      "pardon",
+      "forgiveness",
+      "forgive",
+      "mercy",
+      "amnesty"
+    ],
+    "questions": {
+      "Adjudicator": "Who do the pardoning?",
+      "Defendant": "Who was pardoned?",
+      "Place": "Where the pardon takes place?"
+    }
+  },
+  "Justice:Appeal": {
+    "event_id": "evt029",
+    "template": "<arg1> appealed to <arg2> court or judge at <arg3> place",
+    "roles": [
+      "Plaintiff",
+      "Adjudicator",
+      "Place"
+    ],
+    "i-label": 29,
+    "keywords": [
+      "appeal",
+      "retrial"
+    ],
+    "questions": {
+      "Adjudicator": "Who was the judge or court?",
+      "Place": "Where the appeal takes place?",
+      "Plaintiff": "What is the plaintiff?"
+    }
+  },
+  "Justice:Extradite": {
+    "event_id": "evt030",
+    "template": "<arg1> extradited <arg2> from <arg3> place to <arg4> place",
+    "roles": [
+      "Agent",
+      "Person",
+      "Origin",
+      "Destination"
+    ],
+    "i-label": 30,
+    "keywords": [
+      "extradite",
+      "deport",
+      "expel",
+      "extradiction"
+    ],
+    "questions": {
+      "Agent": "Who is the extraditing agent?",
+      "Person": "Who is being extradited",
+      "Destination": "Where the person is extradited to?",
+      "Origin": "Where is original location of the person being extradited?"
+    }
+  },
+  "Life:Divorce": {
+    "event_id": "evt031",
+    "template": "<arg1> divorced <arg2> in <arg3> place",
+    "roles": [
+      "Person",
+      "Person",
+      "Place"
+    ],
+    "i-label": 31,
+    "keywords": [
+      "divorce",
+      "split",
+      "dissolution"
+    ],
+    "questions": {
+      "Person": "Who are divorced?",
+      "Place": "Where the divorce takes place?"
+    }
+  },
+  "Business:Merge-Org": {
+    "event_id": "evt032",
+    "template": "<arg1> organization merged with <arg2> organization",
+    "roles": [
+      "Org",
+      "Org"
+    ],
+    "i-label": 32,
+    "keywords": [
+      "merge",
+      "acquire",
+      "merger"
+    ],
+    "questions": {
+      "Org": "What is merged?"
+    }
+  },
+  "Justice:Acquit": {
+    "event_id": "evt033",
+    "template": "<arg1> court or judge acquitted <arg2>",
+    "roles": [
+      "Adjudicator",
+      "Defendant"
+    ],
+    "i-label": 33,
+    "keywords": [
+      "acquit",
+      "absolve"
+    ],
+    "questions": {
+      "Adjudicator": "Who was the judge or court?",
+      "Defendant": "Who was acquitted?"
+    }
+  }
+}

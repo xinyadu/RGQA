@@ -1,0 +1,14 @@
+.vscode
+checkpoints/
+logs/
+data/
+preprocessed_*/
+__pycache__/
+lightning_logs/
+fewshot_preprocessed_*/
+eeqa_original
+
+0preprocessed_ir_yn_ACE/
+error_analysis/
+scripts_no_use
+checkpoints.zip
